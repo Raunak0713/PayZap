@@ -19,7 +19,7 @@ const LoginPage = async () => {
         <Card className="max-w-sm">
           <CardHeader>
             <CardTitle className="text-2xl">Login</CardTitle>
-            <CardDescription>Continue with google or choose magic link with your email</CardDescription>
+            <CardDescription>Continue with google or  magic link on your email</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="flex flex-col gap-y-6">

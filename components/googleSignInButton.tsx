@@ -1,5 +1,6 @@
 import { Button } from './ui/button'
 import { signIn } from '@/app/utils/auth'
+import { FaGooglePlusG } from "react-icons/fa";
 
 const GoogleSignInButton = () => {
   return (
@@ -9,7 +10,10 @@ const GoogleSignInButton = () => {
         await signIn("google")
       }}
     >
-      <Button className='w-full' variant={"destructive"} type="submit">Sign In with Google</Button>
+      <Button className='w-full' variant={"destructive"} type="submit">
+        <FaGooglePlusG size={5} />
+        Sign In with Google
+      </Button>
     </form>
   )
 }
