@@ -2,9 +2,14 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { signIn } from '../utils/auth'
+import { auth, signIn } from '../utils/auth'
+import { redirect } from 'next/navigation'
 
-const LoginPage = () => {
+const LoginPage = async  () => {
+  const session = await auth()
+  if(session?.user){
+    redirect("/dashboard")
+  }
   return (
     <>
       <div className='flex h-screen w-full items-center justify-center px-4'>
