@@ -2,7 +2,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import SubmitButton from '@/components/submitButtons'
-import { Button } from '@/components/ui/button'
 import { auth, signIn } from '../utils/auth'
 import { redirect } from 'next/navigation'
 import GoogleSignInButton from '@/components/googleSignInButton'
